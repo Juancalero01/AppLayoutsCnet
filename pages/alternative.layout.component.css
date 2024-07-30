@@ -1,0 +1,30 @@
+#alternative {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main";
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: auto 1fr;
+  position: relative;
+  height: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#alternative header {
+  grid-area: header;
+}
+
+#alternative aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 1rem;
+}
+
+#alternative main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
